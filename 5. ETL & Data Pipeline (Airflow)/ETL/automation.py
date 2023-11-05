@@ -43,8 +43,9 @@ def get_last_rowid():
 last_row_id = get_last_rowid()
 print("Last row id on production datawarehouse = ", last_row_id)
 
-# List out all records in MySQL database with rowid greater than the one on the Data warehouse
-# The function get_latest_records must return a list of all records that have a rowid greater than the last_row_id in the sales_data table in the sales database on the MySQL staging data warehouse.
+# Lists out all records in MySQL database with rowid greater than the one on the Data warehouse
+# The function get_latest_records returns a list of all records that have a rowid greater than 
+# the last_row_id in the sales_data table in the sales database on the MySQL staging data warehouse.
 
 def get_latest_records(row_id):
     try:
@@ -63,8 +64,8 @@ new_records = get_latest_records(last_row_id)
 
 print("New rows on staging datawarehouse = ", len(new_records))
 
-# Insert the additional records from MySQL into DB2 or PostgreSql data warehouse.
-# The function insert_records must insert all the records passed to it into the sales_data table in IBM DB2 database or PostgreSql.
+# Inserts the additional records from MySQL into PostgreSql data warehouse.
+# The function insert_records inserts all the records passed to it into the sales_data table in PostgreSql.
 
 def insert_records(records):
     try:
