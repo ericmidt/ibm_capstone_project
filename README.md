@@ -31,7 +31,9 @@ In the first section of the project, I created a table on MySQL for sales data. 
 then I inserted sales data from a sales_data.sql into the table. I also 
 queried the table, performed operations and exported the data.
 
-![Imagem 1](1.%20Data%20Platform%20Architecture%20and%20OLTP%20Database/1-createtable.png)
+<p align="center">
+  <img src="1.%20Data%20Platform%20Architecture%20and%20OLTP%20Database/1-createtable.png" alt="Imagem 1">
+</p>
 
 I performed a similar operation with another database in MongoDB. I imported a file into it, performed queries, created an index to improve query performance and exported the database.
 
