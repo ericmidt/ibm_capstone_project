@@ -35,39 +35,101 @@ queried the table, performed operations and exported the data.
   <img src="1.%20Data%20Platform%20Architecture%20and%20OLTP%20Database/1-createtable.png" alt="Imagem 1">
 </p>
 
+<p align="center">
+  <img src="1. Data Platform Architecture and OLTP Database/6-exportdata.png" alt="Imagem 2">
+</p>
+
 I performed a similar operation with another database in MongoDB. I imported a file into it, performed queries, created an index to improve query performance and exported the database.
 
-3-mongoimport.png
+<p align="center">
+  <img src="2. Querying Data in NoSQL Databases/1-mongoimport.png" alt="Imagem 3">
+</p>
 
-4-create-index.png
+<p align="center">
+  <img src="2. Querying Data in NoSQL Databases/4-create-index.png" alt="Imagem 4">
+</p>
 
-5-mongo-query-mobiles2.png
+<p align="center">
+  <img src="2. Querying Data in NoSQL Databases/7-mongo-query-mobiles2.png" alt="Imagem 5">
+</p>
 
 I also designed and created a star schema for a database which was supposed to hold 
 ecommerce data on PostgreSQL. Then I performed several queries on the database, from 
 simple select queries to groupingsets, cubes, rollups and created a materialized view.
 
-6-softcartRelationships.png
+<p align="center">
+  <img src="3. PostgreSQL Data Warehouse/design & setup/4-softcartRelationships.png" alt="Imagem 6">
+</p>
 
-7-groupingsets.png
+<p align="center">
+  <img src="3. PostgreSQL Data Warehouse/reporting/5-groupingsets.png" alt="Imagem 7">
+</p>
 
-8-cube.png
+<p align="center">
+  <img src="3. PostgreSQL Data Warehouse/reporting/7-cube.png" alt="Imagem 8">
+</p>
 
-9-mqt.png
+<p align="center">
+  <img src="3. PostgreSQL Data Warehouse/reporting/8-mqt.png" alt="Imagem 9">
+</p>
 
 I imported a dataset into IBM Cognos Dashboards and created dashboards such as a bar graph to
 show mobile phone sales in each quarter, a line graph to show sales for each month
 of 2022, and a pie chart to show sales for three product categories.
 
-10-barchart.png
+<p align="center">
+  <img src="4. Data Analytics (Cognos Dashboard)/barchart.png" alt="Imagem 10">
+</p>
 
-11-linechart.png
 
-12-piechart.png
+<p align="center">
+  <img src="4. Data Analytics (Cognos Dashboard)/linechart.png" alt="Imagem 11">
+</p>
+
+
+<p align="center">
+  <img src="/4. Data Analytics (Cognos Dashboard)/piechart.png" alt="Imagem 12">
+</p>
 
 I automated the process of retrieving the latest records from a MySQL table and 
 inserting them into a PostgreSQL data warehouse. Below are the Python functions 
 that fetch the records, insert them and the output I got after executing the script. 
+
+<p align="center">
+  <img src="/5. ETL & Data Pipeline (Airflow)/ETL/get_latest_records.png" alt="Imagem 13">
+</p>
+
+
+<p align="center">
+  <img src="/5. ETL & Data Pipeline (Airflow)/ETL/insert_records.png" alt="Imagem 14">
+</p>
+
+
+<p align="center">
+  <img src="/5. ETL & Data Pipeline (Airflow)/ETL/synchronization.png" alt="Imagem 15">
+</p>
+
+I used Airflow to create a data pipeline that extracts specific IP addresses from a 
+access log file and loads them into a destination file.
+
+<p align="center">
+  <img src="/5. ETL & Data Pipeline (Airflow)/Airflow/DAG.png" alt="Imagem 16">
+</p>
+
+<p align="center">
+  <img src="/5. ETL & Data Pipeline (Airflow)/Airflow/dag_runs.png" alt="Imagem 17">
+</p>
+
+I used PySpark to load a sales prediction model, apply it to a sales data set,  
+and predict the sales for the year 2023.
+
+<p align="center">
+  <img src="/6. Big Data Analytics with Spark/import_model.png" alt="Imagem 18">
+</p>
+
+<p align="center">
+  <img src="/6. Big Data Analytics with Spark/predict_sales.png" alt="Imagem 19">
+</p>
 
 
 ## Get in touch:
